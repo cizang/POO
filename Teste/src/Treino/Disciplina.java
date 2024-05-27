@@ -4,7 +4,7 @@ public class Disciplina {
 	private String nome;
 	private String horas;
 	private String resumo;
-	private String professr;
+	private Professor professor;
 	public String getNome() {
 		return nome;
 	}
