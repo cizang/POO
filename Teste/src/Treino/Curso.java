@@ -1,4 +1,6 @@
 package Treino;
+import java.util.ArrayList;
+import java.util.List;
 
 public class  Curso {
 	private String quantidadePeriodos;
@@ -25,13 +27,12 @@ public class  Curso {
 	public void setGrauAcademico(String grauAcademico) {
 		this.grauAcademico = grauAcademico;
 	}
-	public String getDisciplinas() {
-		return disciplinas;
+	public List<Disciplina> getDisciplina(){
+		return disciplina;
 	}
-	public void setDisciplinas(String disciplinas) {
-		this.disciplinas = disciplinas;
+	public void setDisciplina(List<Disciplina>disciplina){
+		this.disciplina = disciplina;
 	}
-	
 	
 	
 	
