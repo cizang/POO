@@ -4,7 +4,7 @@ public class  Curso {
 	private String quantidadePeriodos;
 	private String nome;
 	private String grauAcademico;
-	private List<String> disciplina = new ArrayList<>();
+	private List<Disciplina> disciplina = new ArrayList<>();
   
 	
 	public String getQuantidadePeriodos() {
