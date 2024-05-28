@@ -3,16 +3,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class  Curso {
-	private String quantidadePeriodos;
+	private Integer quantidadePeriodos;
 	private String nome;
 	private String grauAcademico;
 	private List<Disciplina> disciplina = new ArrayList<>();
   
 	
-	public String getQuantidadePeriodos() {
+	public Integer getQuantidadePeriodos() {
 		return quantidadePeriodos;
 	}
-	public void setQuantidadePeriodos(String quantidadePeriodos) {
+	public void setQuantidadePeriodos(Integer quantidadePeriodos) {
 		this.quantidadePeriodos = quantidadePeriodos;
 	}
 	public String getNome() {
