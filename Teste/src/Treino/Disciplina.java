@@ -23,13 +23,12 @@ public class Disciplina {
 	public void setResumo(String resumo) {
 		this.resumo = resumo;
 	}
-	public String getProfessr() {
-		return professr;
+	public Professor getProfessor(){
+		return professor;
 	}
-	public void setProfessr(String professr) {
-		this.professr = professr;
+	public void setProfessor(Professor professor){
+		this.professor = professor;
 	}
-	
 	
 	
 	
