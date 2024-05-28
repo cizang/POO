@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Principal {
 	public static void main(String[] args) {
 		
-	
 	}
 	
 	public void preencheCurso() {
@@ -18,7 +17,8 @@ public class Principal {
 		curso.setNome(nomeCurso);
 		
 		System.out.println("Informe a quantidade de períodos: ");
-		String quantidadePeriodos = entrada.nextLine();
+		String qtdPeriodos = entrada.nextLine();
+		int quantidadePeriodos = Integer.parseInt(qtdPeriodos);
 		curso.setQuantidadePeriodos(quantidadePeriodos);
 		
 		System.out.println("Informe o grau academico: ");
@@ -39,9 +39,10 @@ public class Principal {
 		String nomeDisciplina  = entrada.nextLine();
 		disciplina.setNome(nomeDisciplina);
 		
-		System.out.println("Informe o nome da disciplina: ");
-		String horas  = entrada.nextLine();
-		disciplina.setHoras(horas);
+		System.out.println("Informe a quantidade de horas  da disciplina: ");
+		String h  = entrada.nextLine();
+		int horas = Integer.parseInt(h);
+		disciplina.setCargaHoraria(horas);
 	
 		System.out.println("Informe o resumo:");
 		String resumo = entrada.nextLine();
@@ -49,7 +50,7 @@ public class Principal {
 		
 		System.out.println("informe  o professor: ");
 		String professor = entrada.nextLine();
-		disciplina.setProfessr(professor);
+		disciplina.setProfessor(professor);
 		
 	}
 	
@@ -63,7 +64,8 @@ public class Principal {
 		professor.setNome(nomeProfessor);
 		
 		System.out.println("Informe a quantidade de horas semanais: ");
-		String horasSemanais  = entrada.nextLine();
+		String horasS  = entrada.nextLine();
+		int horasSemanais = Integer.parseInt(horasS);
 		professor.setQuantidadeHorasSemanais(horasSemanais);
 	
 		System.out.println("Informe o nivel de formação:");
@@ -86,12 +88,6 @@ public class Principal {
 		
 		System.out.println("Informe o tipo: ");
 		String tipo = entrada.nextLine();
-		sala.setTipo(tipo);
-		
-		
-		
+		sala.setTipo(tipo);		
 	}
-	
-	
-	
 }
