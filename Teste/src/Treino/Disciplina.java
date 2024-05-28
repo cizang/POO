@@ -2,20 +2,21 @@ package Treino;
 
 public class Disciplina {
 	private String nome;
-	private String horas;
+	private int cargaHoraria;
 	private String resumo;
 	private Professor professor;
+	
 	public String getNome() {
 		return nome;
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getHoras() {
-		return horas;
+	public Integer getCargaHoraria() {
+		return cargaHoraria;
 	}
-	public void setHoras(String   horas) {
-		this.horas = horas;
+	public void setCargaHoraria(Integer cargaHoraria) {
+		this.cargaHoraria = cargaHoraria;
 	}
 	public String getResumo() {
 		return resumo;
