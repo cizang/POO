@@ -1,4 +1,5 @@
 package Treino;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,8 +7,7 @@ public class  Curso {
 	private Integer quantidadePeriodos;
 	private String nome;
 	private String grauAcademico;
-	private List<Disciplina> disciplina = new ArrayList<>();
-  
+	public List<Disciplina> disciplina = new ArrayList<>();
 	
 	public Integer getQuantidadePeriodos() {
 		return quantidadePeriodos;
@@ -27,16 +27,14 @@ public class  Curso {
 	public void setGrauAcademico(String grauAcademico) {
 		this.grauAcademico = grauAcademico;
 	}
-	public List<Disciplina> getDisciplina(){
-		return disciplina;
+	public void addDisciplina(List disciplina) {
+		disciplina.add(disciplina);	
 	}
-	public void setDisciplina(List<Disciplina>disciplina){
-		this.disciplina = disciplina;
+	public void removerDisciplina(List disciplina) {
+		disciplina.remove(disciplina);
+		
 	}
+
 	
 	
 	
-	
-	
-	
-}
