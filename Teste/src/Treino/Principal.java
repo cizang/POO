@@ -6,6 +6,10 @@ public class Principal {
 	public static void main(String[] args) {
 		preencheProfessor();
 		preencheDisciplina();
+
+		Professor professor = new Professor();
+		Disciplina disciplina = new Disciplina();
+		disciplina.setProfessor(professor);
 	}
 	
 	public void preencheCurso() {
