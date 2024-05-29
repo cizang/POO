@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Principal {
 	public static void main(String[] args) {
-		
+		preencheProfessor();
 	}
 	
 	public void preencheCurso() {
@@ -30,7 +30,7 @@ public class Principal {
 		curso.setDisciplinas(disciplinas);
 	}
 	
-	public void PreencheDisciplina() {
+	public static void preencheDisciplina() {
 		Scanner entrada = new Scanner(System.in);
 		
 		Disciplina disciplina = new Disciplina();
@@ -48,13 +48,9 @@ public class Principal {
 		String resumo = entrada.nextLine();
 		disciplina.setResumo(resumo);
 		
-		System.out.println("informe  o professor: ");
-		String professor = entrada.nextLine();
-		disciplina.setProfessor(professor);
-		
 	}
 	
-	public void PreencheProfessor() {
+	public static void preencheProfessor() {
 		Scanner entrada = new Scanner(System.in);
 		
 		Professor professor = new Professor();
@@ -73,7 +69,7 @@ public class Principal {
 		professor.setNivelFormação(nivelFormacao);
 	}
 	
-	public void preencheSala() {
+	public static void preencheSala() {
 		Scanner entrada = new Scanner(System.in);
 		
 		Sala sala = new Sala();
