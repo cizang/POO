@@ -24,7 +24,12 @@ public class Professor {
 		this.nivelFormação = nivelFormação;
 	}
 	
-	
+	@Override
+	public String toString() {	
+		return "Nome do professor: " + this.nome + 
+			" \n Quantidade de horas semanais: " + this.quantidadeHorasSemanais + 
+			"\n Nivel de formação: " + this.nivelFormação;
+	}
 	
 	
 	
