@@ -7,7 +7,7 @@ public class  Curso {
 	private Integer quantidadePeriodos;
 	private String nome;
 	private String grauAcademico;
-	public List<Disciplina> disciplina = new ArrayList<>();
+	public List<Disciplina> disciplinas = new ArrayList<>();
 	
 	public Integer getQuantidadePeriodos() {
 		return quantidadePeriodos;
@@ -27,11 +27,11 @@ public class  Curso {
 	public void setGrauAcademico(String grauAcademico) {
 		this.grauAcademico = grauAcademico;
 	}
-	public void addDisciplina(List disciplina) {
-		disciplina.add(disciplina);	
+	public void addDisciplina(Disciplina disciplinas) {
+		disciplina.add(disciplinas);	
 	}
-	public void removerDisciplina(List disciplina) {
-		disciplina.remove(disciplina);
+	public void removerDisciplina(Disciplina disciplinas) {
+		disciplina.remove(disciplinas);
 		
 	}
 
